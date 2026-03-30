@@ -12,10 +12,6 @@ export default function Contact() {
           {/* DATOS */}
           <div className="space-y-4">
             <p>
-              <strong>Responsable:</strong> Néstor Hugo Fernandez
-            </p>
-
-            <p>
               <strong>Ubicación:</strong> Calle 9 Nº 2604, Granadero Baigorria
             </p>
 
@@ -38,9 +34,6 @@ export default function Contact() {
 
             <p>
               <strong>CUIT:</strong> 20-18545403-8
-            </p>
-            <p>
-              <strong>IIBB:</strong> 021-438959-1
             </p>
           </div>
 
