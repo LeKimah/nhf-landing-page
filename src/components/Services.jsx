@@ -2,47 +2,47 @@ export default function Services() {
   const services = [
     {
       title: "Agua y desagües",
-      desc: "Mantenimiento y reparación de sistemas sanitarios y efluentes industriales.",
+      desc: "Mantenimiento general de sistemas de agua y desagües. Reparaciones en instalaciones sanitarias y sistemas cloacales.",
     },
     {
       title: "Albañilería",
-      desc: "Obras civiles, refacciones y construcción de estructuras de hormigón.",
+      desc: "Obras civiles, construcciones y refacciones. Trabajos con sistema Retak y estructuras de hormigón armado.",
     },
     {
       title: "Construcción en seco",
-      desc: "Montaje y reparación de paredes y techos en durlock.",
+      desc: "Construcción en durlock, mantenimiento y reparación de paredes y techos. Modificaciones y montaje de nuevos espacios.",
     },
     {
       title: "Aluminio",
-      desc: "Reparación y mantenimiento de aberturas y cerramientos.",
+      desc: "Reparación y mantenimiento de aberturas de aluminio y cerramientos.",
     },
     {
       title: "Pintura",
-      desc: "Trabajos de pintura interior y exterior con tratamiento de superficies.",
+      desc: "Trabajos de pintura interior y exterior. Tratamiento de superficies y aplicación sobre estructuras metálicas.",
     },
     {
       title: "Impermeabilización",
-      desc: "Solución de filtraciones en techos, paredes y estructuras.",
+      desc: "Soluciones para filtraciones en techos y paredes. Aplicación de productos específicos para protección y sellado.",
     },
     {
       title: "Cerrajería",
-      desc: "Reparación e instalación de cerraduras y sistemas de seguridad.",
+      desc: "Reparación e instalación de cerraduras. Sistemas hidráulicos y antipánico.",
     },
     {
       title: "Herrería",
-      desc: "Fabricación y reparación de estructuras metálicas y soldadura.",
+      desc: "Fabricación y reparación de estructuras metálicas. Trabajos de herrería industrial y de obra.",
     },
     {
       title: "Vidrios",
-      desc: "Colocación y recambio de vidrios de diferentes tipos.",
-    },
-    {
-      title: "Chapeado",
-      desc: "Reparación y mantenimiento de techos y estructuras metálicas.",
+      desc: "Colocación y recambio de vidrios en distintos formatos y aplicaciones.",
     },
     {
       title: "Estructuras metálicas",
-      desc: "Diseño, fabricación y montaje de estructuras y plataformas.",
+      desc: "Diseño y construcción de estructuras metalmecánicas. Montaje de plataformas, escaleras y soportes.",
+    },
+    {
+      title: "Personal para servicios",
+      desc: "Servicio de contratación de personal por horas demandadas o requeridas.",
     },
   ];
 
