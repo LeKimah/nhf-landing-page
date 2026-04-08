@@ -1,27 +1,27 @@
 export default function Projects() {
   const projects = [
     {
-      title: "Reconstrucción de Cercos Perimetrales",
-      images: [
-        "/images/projects/cercos/img1.png",
-        "/images/projects/cercos/img3.png",
-        "/images/projects/cercos/img4.png",
-      ],
-    },
-    {
-      title: "Reparación techo de edificio",
-      images: [
-        "/images/projects/techo/img1.png",
-        "/images/projects/techo/img2.png",
-        "/images/projects/techo/img3.png",
-      ],
-    },
-    {
       title: "Construcción de cielorraso antifugo",
       images: [
         "/images/projects/cielorraso/img1.png",
         "/images/projects/cielorraso/img2.png",
         "/images/projects/cielorraso/img3.png",
+      ],
+    },
+    {
+      title: "Refacción de contenedor oficina",
+      images: [
+        "/images/projects/contenedor/img1.png",
+        "/images/projects/contenedor/img3.png",
+        "/images/projects/contenedor/img5.png",
+      ],
+    },
+    {
+      title: "Construcción de quincho en Ibarlucea",
+      images: [
+        "/images/projects/quincho/img1.png",
+        "/images/projects/quincho/img3.png",
+        "/images/projects/quincho/img5.png",
       ],
     },
     {

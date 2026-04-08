@@ -49,28 +49,22 @@ export default function Services() {
   return (
     <section id="services" className="py-20 px-6 bg-gray-100">
       <div className="max-w-6xl mx-auto">
-        
-        <h2 className="text-3xl font-bold text-center mb-4">
-          Servicios
-        </h2>
+        <h2 className="text-3xl font-bold text-center mb-4">Servicios</h2>
 
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-          Brindamos soluciones integrales de mantenimiento edilicio y servicios industriales adaptados a cada necesidad.
+          Brindamos soluciones integrales de mantenimiento edilicio y servicios
+          industriales adaptados a cada necesidad.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {services.map((service, i) => (
             <div
               key={i}
-              className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition duration-300"
+              className="bg-white shadow rounded-xl p-6 transition transform hover:-translate-y-2 hover:shadow-xl"
             >
-              <h3 className="font-semibold mb-2">
-                {service.title}
-              </h3>
+              <h3 className="font-semibold mb-2">{service.title}</h3>
 
-              <p className="text-sm text-gray-500">
-                {service.desc}
-              </p>
+              <p className="text-sm text-gray-500">{service.desc}</p>
             </div>
           ))}
         </div>
@@ -82,12 +76,13 @@ export default function Services() {
 
           <a
             href="#contact"
-            className="px-6 py-3 bg-gray-900 text-white rounded-lg"
+            className="px-6 py-3 bg-blue-600 text-white rounded-lg 
+             hover:bg-blue-700 hover:scale-105 
+             transition-all duration-300 shadow-md"
           >
             Solicitar presupuesto
           </a>
         </div>
-
       </div>
     </section>
   );
