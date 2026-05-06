@@ -5,7 +5,7 @@ export default function Projects() {
       images: [
         "/images/projects/cielorraso/img1.png",
         "/images/projects/cielorraso/img2.png",
-        "/images/projects/cielorraso/img3.png",
+        "/images/projects/cielorraso/img4.png",
       ],
     },
     {

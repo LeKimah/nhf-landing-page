@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section className="h-screen flex items-center justify-center text-center px-6 animate-fade-in">
       <img
-        src="/images/projects/cercos/img4.png"
+        src="/images/hero/img1.png"
         className="absolute inset-0 w-full h-full object-cover"
       />
 
@@ -15,7 +15,7 @@ export default function Hero() {
           className="mx-auto mb-1 w-40 md:w-56 lg:w-64"
         />
 
-        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4">
+        <h1 className="text-3xl text-gray-300 sm:text-4xl md:text-6xl font-bold mb-4">
           NHF Servicios
         </h1>
 
