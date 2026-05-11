@@ -1,5 +1,17 @@
+import { useState } from "react";
+
 export default function Projects() {
+  const [selectedImage, setSelectedImage] = useState(null);
+
   const projects = [
+    {
+      title: "Obra pasarela en playa de camiones",
+      images: [
+        "/images/projects/pasarela/img1.png",
+        "/images/projects/pasarela/img2.png",
+        "/images/projects/pasarela/img4.png",
+      ],
+    },
     {
       title: "Construcción de cielorraso antifugo",
       images: [
@@ -28,10 +40,13 @@ export default function Projects() {
       title: "Remodelación de edificio antiguo",
       images: [
         "/images/projects/merendero/img1.png",
+        "/images/projects/merendero/img2.png",
         "/images/projects/merendero/img3.png",
+        "/images/projects/merendero/img6.png",
         "/images/projects/merendero/img4.png",
-      ]
-    }
+        "/images/projects/merendero/img8.png",
+      ],
+    },
   ];
 
   return (
@@ -50,13 +65,36 @@ export default function Projects() {
                 <img
                   key={index}
                   src={img}
-                  className="rounded-lg object-cover w-full h-52 sm:h-60 w-full hover:scale-105 transition duration-300"
+                  onClick={() => setSelectedImage(img)}
+                  className="cursor-pointer rounded-lg object-cover w-full h-52 sm:h-60 w-full hover:scale-105 transition duration-300"
                 />
               ))}
             </div>
           </div>
         ))}
       </div>
+      {selectedImage && (
+        <div
+          className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50 p-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div className="relative max-w-5xl w-full">
+            <button
+              className="absolute top-4 right-4 text-white text-3xl font-bold z-50"
+              onClick={() => setSelectedImage(null)}
+            >
+              ×
+            </button>
+
+            <img
+              src={selectedImage}
+              alt="Imagen ampliada"
+              className="w-full max-h-[90vh] object-contain rounded-lg"
+              onClick={(e) => e.stopPropagation()}
+            />
+          </div>
+        </div>
+      )}
     </section>
   );
 }
