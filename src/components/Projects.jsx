@@ -13,7 +13,15 @@ export default function Projects() {
       ],
     },
     {
-      title: "Construcción de cielorraso antifugo",
+      title: "Vereda de hormigón",
+      images: [
+        "/images/projects/veredas/img1.png",
+        "/images/projects/veredas/img2.png",
+        "/images/projects/veredas/img3.png",
+      ],
+    },
+    {
+      title: "Construcción de cielorraso ignifugo",
       images: [
         "/images/projects/cielorraso/img1.png",
         "/images/projects/cielorraso/img2.png",
@@ -34,6 +42,14 @@ export default function Projects() {
         "/images/projects/quincho/img1.png",
         "/images/projects/quincho/img3.png",
         "/images/projects/quincho/img5.png",
+      ],
+    },
+    {
+      title: "Construcción de sala de operadores",
+      images: [
+        "/images/projects/sala/img1.png",
+        "/images/projects/sala/img2.png",
+        "/images/projects/sala/img4.png",
       ],
     },
     {
