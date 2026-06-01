@@ -2,6 +2,24 @@ import { useState } from "react";
 
 export default function Projects() {
   const [selectedImage, setSelectedImage] = useState(null);
+  const [allImages, setAllImages] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextImage = () => {
+    const newIndex =
+      currentIndex === allImages.length - 1 ? 0 : currentIndex + 1;
+
+    setCurrentIndex(newIndex);
+    setSelectedImage(allImages[newIndex]);
+  };
+
+  const previousImage = () => {
+    const newIndex =
+      currentIndex === 0 ? allImages.length - 1 : currentIndex - 1;
+
+    setCurrentIndex(newIndex);
+    setSelectedImage(allImages[newIndex]);
+  };
 
   const projects = [
     {
@@ -81,7 +99,11 @@ export default function Projects() {
                 <img
                   key={index}
                   src={img}
-                  onClick={() => setSelectedImage(img)}
+                  onClick={() => {
+                    setAllImages(project.images);
+                    setCurrentIndex(index);
+                    setSelectedImage(img);
+                  }}
                   className="cursor-pointer rounded-lg object-cover w-full h-52 sm:h-60 w-full hover:scale-105 transition duration-300"
                 />
               ))}
@@ -96,6 +118,26 @@ export default function Projects() {
         >
           <div className="relative max-w-5xl w-full">
             <button
+              onClick={(e) => {
+                e.stopPropagation();
+                previousImage();
+              }}
+              className="absolute left-4 top-1/2 -translate-y-1/2 text-white text-5xl z-50"
+            >
+              ‹
+            </button>
+
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                nextImage();
+              }}
+              className="absolute right-4 top-1/2 -translate-y-1/2 text-white text-5xl z-50"
+            >
+              ›
+            </button>
+
+            <button
               className="absolute top-4 right-4 text-white text-3xl font-bold z-50"
               onClick={() => setSelectedImage(null)}
             >
@@ -108,6 +150,10 @@ export default function Projects() {
               className="w-full max-h-[90vh] object-contain rounded-lg"
               onClick={(e) => e.stopPropagation()}
             />
+
+            <p className="text-center text-white mt-4">
+              {currentIndex + 1} / {allImages.length}
+            </p>
           </div>
         </div>
       )}
