@@ -26,21 +26,21 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="#contact"
-            className="px-6 py-3 bg-white text-black rounded-lg font-medium hover:bg-gray-300 transition"
+            className="px-6 py-3 bg-white text-gray-800 rounded-lg font-semibold hover:bg-gray-200 transition"
           >
             Contacto
           </a>
 
           <a
             href="#services"
-            className="px-6 py-3 bg-white text-black rounded-lg font-medium hover:bg-gray-300 transition"
+            className="px-6 py-3 bg-transparent border border-white text-white rounded-lg font-medium hover:bg-white hover:text-gray-900 transition"
           >
             Servicios
           </a>
 
           <a
             href="#projects"
-            className="px-6 py-3 bg-white text-black rounded-lg font-medium hover:bg-gray-300 transition"
+            className="px-6 py-3 bg-transparent border border-white text-white rounded-lg font-medium hover:bg-white hover:text-gray-900 transition"
           >
             Trabajos realizados
           </a>
